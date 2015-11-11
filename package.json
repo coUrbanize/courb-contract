@@ -1,7 +1,7 @@
 {
   "name": "courb-contract",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "Manage API contract payload fixtures.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,14 +11,15 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/coUrbanize/courb-contract",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.2.2"
   },
-  "author": "",
+  "author": "Christian Spanring <christian@courbanize.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
+    "chalk": "^1.1.1",
     "ember-cli": "1.13.8",
     "ember-cli-app-version": "0.5.0",
     "ember-cli-content-security-policy": "0.4.0",
@@ -32,18 +33,23 @@
     "ember-cli-sri": "^1.0.3",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "1.13.8",
+    "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.3",
-    "ember-disable-prototype-extensions": "^1.0.0",
-    "ember-try": "0.0.6"
+    "ember-try": "0.0.6",
+    "node-dir": "^0.1.11",
+    "nodegit": "^0.5.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "testing",
+    "API"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "defaultBlueprint": "contract-config"
   }
 }
